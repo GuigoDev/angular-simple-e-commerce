@@ -1,3 +1,3 @@
-# angular-fr7a4g-sg9edc
+# angular-simple-e-commerce
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-fr7a4g-sg9edc)
+Um simples site de e-commerce feito com Angular.
