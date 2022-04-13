@@ -1,0 +1,44 @@
+[debug] [2022-04-13T02:19:52.417Z] ----------------------------------------------------------------------
+[debug] [2022-04-13T02:19:52.419Z] Command:       /usr/bin/node /usr/bin/firebase init hosting
+[debug] [2022-04-13T02:19:52.420Z] CLI Version:   10.6.0
+[debug] [2022-04-13T02:19:52.420Z] Platform:      linux
+[debug] [2022-04-13T02:19:52.420Z] Node Version:  v16.14.2
+[debug] [2022-04-13T02:19:52.421Z] Time:          Tue Apr 12 2022 23:19:52 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-04-13T02:19:52.421Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-13T02:19:52.506Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-13T02:19:52.506Z] > authorizing via signed-in user (guilhermeazevedo.deb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/guilherme/github/angular-simple-e-commerce
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-13T02:19:52.512Z] Using project from CLI flag: angular-simple-e-commerc-5c1b4
+[debug] [2022-04-13T02:19:52.515Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/angular-simple-e-commerc-5c1b4 [none]
+[debug] [2022-04-13T02:19:53.761Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/angular-simple-e-commerc-5c1b4 200
+[debug] [2022-04-13T02:19:53.762Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/angular-simple-e-commerc-5c1b4 {"projectId":"angular-simple-e-commerc-5c1b4","projectNumber":"612652302964","displayName":"Angular Simple E-commerce","name":"projects/angular-simple-e-commerc-5c1b4","resources":{"hostingSite":"angular-simple-e-commerc-5c1b4"},"state":"ACTIVE"}
+[info] i  Using project angular-simple-e-commerc-5c1b4 (Angular Simple E-commerce) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
