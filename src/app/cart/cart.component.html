@@ -1,25 +1,44 @@
-<p>Cart</p>
-
-<p>
-  <a routerLink="/shipping">Shipping Prices</a>
-</p>
-
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
-</div>
-
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-
-  <div>
-    <label for="name">Name</label>
-    <input id="name" type="text" formControlName="name">
+<main>
+  <p id="cart">Cart</p>
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Your Items in cart:</span>
+      </h4>
+      <ul class="list-group mb-3" *ngFor="let item of items">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">{{ item.name }}</h6>
+            <span class="text-muted">{{ item.price | currency }}</span>
+          </div>
+        </li>
+      </ul>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Total (USD): </span>
+        <strong>$xxx</strong>
+      </li>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Billing Address</h4>
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="row g-3">
+          <div class="col sm-6">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name"  class="form-control" formControlName="name">
+          </div>
+          <div class="col sm-6">
+            <label class="form-label" for="address">Address</label>
+            <input type="text" id="address" class="form-control" formControlName="address">
+          </div>
+        </div>
+        <br/>
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Purchase</button>
+        <p id="shipping">
+          <a routerLink="/shipping">Shipping Prices</a>
+        </p>
+      </form>
+    </div>
   </div>
+</main>
 
-  <div>
-    <label for="address">Address</label>
-    <input id="address" type="text" formControlName="address">
-  </div>
 
-  <button class="button" type="submit">Purchase</button>
-</form>
