@@ -1,8 +1,17 @@
-<p>product-details works!</p>
-
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
-</div>
+<main>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <p id="product-details">Product details:</p>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div *ngIf="product" class="card-header py-3">
+          <h4 class="my-0 fw-normal">{{ product.name }}</h4>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{ product.price | currency }}</h1>
+            <p>{{ product.description }}</p>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" (click)="addToCart(product)">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
