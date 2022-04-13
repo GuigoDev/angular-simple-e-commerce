@@ -8,21 +8,39 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Phone XL',
+    name: 'iPhone XL',
     price: 799,
     description: 'A large phone with one of the best screens'
   },
   {
     id: 2,
-    name: 'Phone Mini',
+    name: 'iPhone Mini',
     price: 699,
     description: 'A great phone with one of the best cameras'
   },
   {
     id: 3,
-    name: 'Phone Standard',
+    name: 'iPhone 8',
     price: 299,
-    description: ''
+    description: 'A great phone with one of the best cameras with low cost'
+  },
+  {
+    id: 4,
+    name: 'Phone 6',
+    price: 299,
+    description: 'A great phone with one of the best cameras with low cost'
+  },
+  {
+    id: 5,
+    name: 'Phone 12 Pro Max',
+    price: 299,
+    description: 'A great phone with one of the best cameras with low cost'
+  },
+  {
+    id: 6,
+    name: 'Phone X',
+    price: 299,
+    description: 'A great phone with one of the best cameras with low cost'
   }
 ];
 
